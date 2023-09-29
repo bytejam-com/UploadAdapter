@@ -3,21 +3,22 @@ const { CKEditorTranslationsPlugin } = require( '@ckeditor/ckeditor5-dev-transla
 const { styles } = require( '@ckeditor/ckeditor5-dev-utils' );
 
 module.exports = {
-    //entry: './main.js',
+    devtool: 'source-map',
     entry: path.resolve( __dirname, 'src', 'ckeditor.js' ),
     output: {
-        //path: path.resolve( __dirname, 'dist' ),
-        //filename: 'bundle.js'
+        library: 'ClassicEditor',
         path: path.resolve( __dirname, 'build' ),
         filename: 'ckeditor.js',
+        libraryTarget: 'umd',
+        libraryExport: 'default'
     },
     plugins: [
         // More plugins.
         // ...
 
         new CKEditorTranslationsPlugin( {
-            // See https://ckeditor.com/docs/ckeditor5/latest/features/ui-language.html
-            language: 'pl'
+            language: 'en',
+            additionalLanguages: 'all'
         } )
     ],
     module: {
