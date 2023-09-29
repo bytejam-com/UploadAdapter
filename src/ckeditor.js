@@ -10,7 +10,6 @@ import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { Bold, Code, Italic, Underline } from '@ckeditor/ckeditor5-basic-styles';
 import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-//import { EasyImage } from '@ckeditor/ckeditor5-easy-image';
 import { Image, ImageCaption, ImageStyle, ImageToolbar, ImageUpload } from '@ckeditor/ckeditor5-image';
 import { Heading } from '@ckeditor/ckeditor5-heading';
 import { Indent, IndentBlock } from '@ckeditor/ckeditor5-indent';
@@ -30,7 +29,6 @@ ClassicEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
-	//EasyImage,
 	BlockQuote,
 	Heading,
 	Image,
