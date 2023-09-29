@@ -2,6 +2,7 @@ const path = require( 'path' );
 const { CKEditorTranslationsPlugin } = require( '@ckeditor/ckeditor5-dev-translations' );
 const { styles } = require( '@ckeditor/ckeditor5-dev-utils' );
 
+
 module.exports = {
     devtool: 'source-map',
     entry: path.resolve( __dirname, 'src', 'ckeditor.js' ),
