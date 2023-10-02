@@ -23,6 +23,7 @@ import { Base64UploadAdapter } from '@ckeditor/ckeditor5-upload';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
+
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
 	Essentials,
@@ -72,7 +73,13 @@ ClassicEditor.defaultConfig = {
 	},
 	image: {
 		toolbar: [
+			'imageStyle:alignLeft',
+			'imageStyle:alignRight',
 			'imageStyle:side',
+			'imageStyle:block',
+			'imageStyle:alignBlockLeft',
+			'imageStyle:alignBlockRight',
+			'imageStyle:alignCenter',
 			'|',
 			'imageTextAlternative'
 		]
