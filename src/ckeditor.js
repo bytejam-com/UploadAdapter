@@ -47,7 +47,6 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	Base64UploadAdapter
 ];
-
 // Editor configuration.
 ClassicEditor.defaultConfig = {
 	toolbar: {
